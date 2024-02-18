@@ -1,38 +1,335 @@
-.App {
-  text-align: center;
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container .Header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container .Navbar ul{
+    list-style: none;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.container .Navbar ul li{
+    display: inline-block;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .Navbar ul li:last-child{
+    margin-right: 0px;
+}
+
+.container .logo{
+    width: 175px;
+    height: 90px;
+}
+
+.Hero{
+    height: 500px;
+    background-color: #495e57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero .title{
+    width: 30%;
+    height: 325px;
+    color: #f4ce14;
+}
+
+.Hero .title h2{
+    color: white;
+}
+
+.Hero .title p{
+    margin: 5px 0;
+    color: white;
+}
+
+.Hero .title button{
+    margin-top: 40px;
+    width: 200px;
+    height: 60px;
+    background-color: #f4ce14;
+    border: 1px solid black;
+    border-radius: 16px;
+    font-size: small;
+    font-weight: bold;
+
+}
+
+.Hero .heroimgcontainer{
+    width: 30%;
+    height: 325px;
+   
+}
+
+
+.Hero .heroimgcontainer .heroimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 30px;
+    border:1px solid black;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.Hilights{
+    
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.Hilights .onlineitems{
+
+    width: 68%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Hilights .onlineitems button{
+
+    width: 200px;
+    height: 60px;
+    background-color: #f4ce14;
+    border: 1px solid black;
+    border-radius: 16px;
+    font-size: small;
+    font-weight: bold;
+
+}
+    
+.Hilights .itmesContainer{
+    width: 68%;
+    height: 390px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Hilights .itmesContainer .item{
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid black;
+    border-radius: 16px;
+}
+
+.Hilights .itmesContainer .item div{
+    padding: 5px;
+}
+.Hilights .itmesContainer .item h4{
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.Hilights .itmesContainer .item p{
+    margin-bottom: 0px;
+    /* text-align: justify;
+    letter-spacing: 1px */
+}
+.Hilights .itmesContainer .item h4{
+    margin-bottom: 0px;
+}
+
+.Hilights .itmesContainer .item .delivery{
+    display: flex;
+    align-items: center;
+}
+.Hilights .itmesContainer .item .deliveryicon{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.Hilights .itmesContainer .item img{
+    width: 100%;
+    height: 180px;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testmonial{
+    width: 100%;
+    min-height: 500px;
+    background-color: #495e57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testmonial .testmonialContainer {
+    width: 70%;
+    min-height: 320px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+}
+
+.testmonial .testmonialContainer section{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-right: auto;
+}
+
+.testmonial .testmonialContainer .testmonialContent{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.testmonial .testmonialContainer .person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.testmonial .testmonialContainer .rating{
+    color: orangered;
+}
+
+.testmonial .testmonialContainer section .personImg {
+    width: 75px;
+    height: 75px;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 10px;
+    box-shadow: 0 0 2px 1px ;
+}
+
+.About{
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+   
+.About .AboutContainer{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    
+}
+.About .title{
+    width: 30%;
+    height: 325px;
+   
+    
+}
+.About .title h1{
+    color: #f4ce14;
+    margin-bottom: 0px;
+}
+
+.About .title h2{
+    color: black;
+    margin-top: 5px;
+}
+
+.About .title p{
+    margin: 5px 0;
+    color: black;
+}
+
+.About .heroimgcontainer{
+    width: 25%;
+    height: 350px;
+    position: relative;
+   
+}
+
+
+.About .heroimgcontainer .heroimage1{
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    margin-left: 30px;
+    object-fit: cover;
+    object-position: center;
+    border:1px solid black;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+.About .heroimgcontainer .heroimage2{
+    width: 100%;
+    height: 100%;
+    left: 200px;
+    bottom: 20px;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    border:1px solid black;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer{
+    width: 100%; 
+    height: 300px;
+    background-color: #495e57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.footerContainer{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerContainer .Logo2Section{
+    width: 175px;
+    height: 225px;
+    background: white;
+}
+.footerContainer .Logo2Section img{
+    width: 175px;
+    height: 90%;
+    margin-top: 10px;
+    object-fit: contain;
+    object-position: center;
 }
